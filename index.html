@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculadora.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="calculadora">
+        <div>
+            <h2 class="text-center mx-auto px-auto">CALCULADORA BASICA 1.0</h2>
+        </div>
+        <table>
+            <tr>
+                <td colspan="1"><input type="text" id="operando1"></td>
+                <td colspan="1"><input type="text" id="operando2"></td>
+                <td colspan="2"><input disabled type="text" id="resultado"></td>
+            </tr>
+            <tr>
+                <td><button type="button" id="sumar" class="operacion" onclick="calcular('sumar')">+</button></td>
+                <td><button type="button" id="restar" class="operacion" onclick="calcular('restar')">-</button></td>
+                <td rowspan="2"><button type="button" id="clear" class="operacion" onclick="limpiar()">C</button></td>
+            </tr>
+            <tr>
+                </button>
+                </td>
+                <td><button type="button" id="multiplicar" class="operacion" onclick="calcular('multiplicar')">X</button></td>
+                <td><button type="button" id="dividir" class="operacion" onclick="calcular('dividir')">/
+            </tr>
+            <tr>
+                <td colspan="4"><button type="button" id="igual" class="operacion" onclick="total()">=</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
